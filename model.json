@@ -1,0 +1,54 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "dungeon dice roller",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "hilp",
+                        "halp",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+                        "home",
+                        "go home"
+                    ]
+                },
+                {
+                    "name": "DiceRoller",
+                    "slots": [
+                        {
+                            "name": "DiceNumber",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "SideNumber",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "Modifier",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "roll {DiceNumber} dee {SideNumber}",
+                        "roll {DiceNumber} dee {SideNumber} plus {Modifier}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
